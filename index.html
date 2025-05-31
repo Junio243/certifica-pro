@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="mb-4">Verificação de Certificados</h1>
+<form method="POST" class="row g-3">
+  <div class="col-md-6">
+    <label class="form-label">CPF</label>
+    <input type="text" name="cpf" class="form-control" placeholder="000.000.000-00">
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">Código do Certificado</label>
+    <input type="text" name="codigo" class="form-control" placeholder="CERT-ABC123">
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Validar</button>
+  </div>
+</form>
+{% endblock %}
